@@ -348,9 +348,6 @@ export const inHouseReportTemplates = async function (
          // }
          {
             address: "akash.more@thesleepcompany.in",
-         },
-         {
-            address: "arpit.tiwari@code-b.dev",
          }
       ],
    };
