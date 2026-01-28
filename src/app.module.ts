@@ -11,6 +11,8 @@ import { TemplateModule } from "./modules/template/template.module";
 import { HealthController } from "./health/health.controller";
 import { TerminusModule } from "@nestjs/terminus";
 import { HttpModule } from "@nestjs/axios";
+import { ScheduleModule } from "@nestjs/schedule";
+import { CommunicationReportModule } from "./modules/communication-report/communication-report.module";
 
 @Module({
   imports: [
@@ -42,6 +44,8 @@ import { HttpModule } from "@nestjs/axios";
     }),
     OrdersModule,
     TemplateModule,
+    ScheduleModule.forRoot(),
+    CommunicationReportModule,
   ],
   controllers: [AppController, HealthController],
   providers: [AppService],
